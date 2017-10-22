@@ -29,6 +29,10 @@ public class PigGameV2{
 
 		do{
 			while(stopPlayer == 1){
+				try{
+					Thread.sleep(1000);
+				}catch(Exception e)
+				{}
 				System.out.printf("%s's turn\n", playerName);
 				System.out.printf("--------------------\n");
 
@@ -75,6 +79,10 @@ public class PigGameV2{
 			}
 
 			while(stopComputer < 3){
+				try{
+					Thread.sleep(1000);
+				}catch(Exception e)
+				{}
 				System.out.printf("Player 2's turn\n");
 				System.out.printf("--------------------\n");
 
@@ -122,6 +130,10 @@ public class PigGameV2{
 			}
 
 			while(((computerTotal2 > playerTotal) || (computerTotal2 <= playerTotal)) && (stopPlayer3 == false)){
+				try{
+					Thread.sleep(1000);
+				}catch(Exception e)
+				{}
 				System.out.printf("Player 3's turn\n");
 				System.out.printf("--------------------\n");
 
@@ -166,6 +178,10 @@ public class PigGameV2{
 			}
 
 			while(((computerTotal3 > computerTotal1) || (computerTotal3 <= computerTotal1)) && (stopPlayer4 == false)){
+				try{
+					Thread.sleep(1000);
+				}catch(Exception e)
+				{}
 				System.out.printf("Player 4's turn\n");
 				System.out.printf("--------------------\n");
 
